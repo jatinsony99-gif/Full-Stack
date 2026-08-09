@@ -1,0 +1,27 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #1f2937;
+  background: #f8fafc;
+  --border: #dbe3ee;
+  --accent: #7c3aed;
+  --accent-bg: #f5f3ff;
+  --shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%); }
+#root { width: 100%; min-height: 100vh; }
+
+.app-shell { padding: 2rem; display: grid; gap: 1.5rem; }
+.hero-panel, .card { background: white; border: 1px solid var(--border); border-radius: 1rem; box-shadow: var(--shadow); }
+.hero-panel { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 1.75rem; }
+.eyebrow { text-transform: uppercase; letter-spacing: 0.2em; font-size: 0.8rem; color: var(--accent); margin-bottom: 0.5rem; }
+.intro { max-width: 45rem; color: #475569; }
+.action-btn { border: none; border-radius: 999px; padding: 0.75rem 1.25rem; background: var(--accent); color: white; cursor: pointer; }
+.stats-grid, .content-grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.card { padding: 1.25rem; text-align: left; }
+.card ul { list-style: none; padding: 0; margin: 0.75rem 0 0; display: grid; gap: 0.6rem; }
+.card li { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; }
+.card button { border: 1px solid var(--border); border-radius: 999px; background: var(--accent-bg); color: var(--accent); padding: 0.3rem 0.7rem; cursor: pointer; }
